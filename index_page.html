@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .card-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .card-features {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .card-features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .card-features li {
+            padding: 5px 0;
+            color: #555;
+        }
+        
+        .card-features li:before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-top: 30px;
+        }
+        
+        .info-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .tech-badge {
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            color: white;
+        }
+        
+        .stat-value {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Servlet & JSP Web Applications</h1>
+            <p class="subtitle">Complete Guide to Java Web Development with Database Integration</p>
+        </header>
+        
+        <div class="cards-grid">
+            <!-- Part A: User Login -->
+            <div class="card">
+                <div class="card-icon">🔐</div>
+                <h2 class="card-title">Part A: User Login</h2>
+                <p class="card-description">
+                    Secure user authentication system with HTML forms and Servlet processing.
+                </p>
+                <div class="card-features">
+                    <ul>
+                        <li>HTML form handling</li>
+                        <li>POST request processing</li>
+                        <li>Credential validation</li>
+                        <li>Dynamic response generation</li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn">Access Login Portal</a>
+            </div>
+            
+            <!-- Part B: Employee Management -->
+            <div class="card">
+                <div class="card-icon">👥</div>
+                <h2 class="card-title">Part B: Employee Management</h2>
+                <p class="card-description">
+                    Complete employee records system with JDBC integration and search functionality.
+                </p>
+                <div class="card-features">
+                    <ul>
+                        <li>Database connectivity (JDBC)</li>
+                        <li>View all employees</li>
+                        <li>Search by Employee ID</li>
+                        <li>Dynamic HTML tables</li>
+                    </ul>
+                </div>
+                <a href="EmployeeServlet" class="btn">Open Employee Portal</a>
+            </div>
+            
+            <!-- Part C: Attendance Portal -->
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h2 class="card-title">Part C: Attendance Portal</h2>
+                <p class="card-description">
+                    Student attendance tracking system using JSP and Servlets with real-time updates.
+                </p>
+                <div class="card-features">
+                    <ul>
+                        <li>JSP form interface</li>
+                        <li>Servlet backend processing</li>
+                        <li>Database persistence</li>
+                        <li>Attendance statistics</li>
+                    </ul>
+                </div>
+                <a href="attendance.jsp" class="btn">Mark Attendance</a>
+            </div>
+        </div>
+        
+        <!-- Statistics Section -->
+        <div class="info-section">
+            <h2>📊 Project Statistics</h2>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Complete Applications</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">4</div>
+                    <div class="stat-label">Servlets</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Databases</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Working Features</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Technology Stack -->
+        <div class="info-section">
+            <h2>🛠️ Technology Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-badge">Java Servlets</span>
+                <span class="tech-badge">JSP (JavaServer Pages)</span>
+                <span class="tech-badge">JDBC</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">Apache Tomcat</span>
+                <span class="tech-badge">MVC Pattern</span>
+            </div>
+        </div>
+        
+        <!-- Features Overview -->
+        <div class="info-section">
+            <h2>✨ Key Features</h2>
+            <div class="cards-grid">
+                <div style="background: #f0f4ff; padding: 20px; border-radius: 10px;">
+                    <h3 style="color: #667eea; margin-bottom: 10px;">🔒 Security</h3>
+                    <p style="color: #666;">PreparedStatement for SQL injection prevention, secure form handling, and session management.</p>
+                </div>
+                <div style="background: #f0f4ff; padding: 20px; border-radius: 10px;">
+                    <h3 style="color: #667eea; margin-bottom: 10px;">📱 Responsive Design</h3>
+                    <p style="color: #666;">Modern, mobile-friendly interfaces with smooth animations and intuitive navigation.</p>
+                </div>
+                <div style="background: #f0f4ff; padding: 20px; border-radius: 10px;">
+                    <h3 style="color: #667eea; margin-bottom: 10px;">💾 Database Integration</h3>
+                    <p style="color: #666;">Complete CRUD operations with optimized queries and proper resource management.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="info-section">
+            <h2>🔗 Quick Links</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;">
+                <a href="login.html" style="padding: 15px; background: #667eea; color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: 600;">User Login →</a>
+                <a href="EmployeeServlet" style="padding: 15px; background: #764ba2; color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: 600;">Employee Records →</a>
+                <a href="attendance.jsp" style="padding: 15px; background: #667eea; color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: 600;">Mark Attendance →</a>
+                <a href="ViewAttendanceServlet" style="padding: 15px;
