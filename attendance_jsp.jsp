@@ -269,7 +269,7 @@
                             conn = DriverManager.getConnection(
                                 "jdbc:mysql://localhost:3306/school_db",
                                 "root",
-                                "password" // Change this
+                                "Sujit1202@" // Change this
                             );
                             
                             stmt = conn.createStatement();
